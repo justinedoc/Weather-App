@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <section>
+        <div class="container-1">
+            <div class="search-box">
+                <i class='bx bx-search'></i>
+                <input type="text" name="search" id="searchInput" placeholder="Search for places...">
+
+            </div>
+
+            <div class="current-weather-img-box">
+                <img src="img/weather.png" alt="current weather">
+            </div>
+
+            <div class="weather-temp-d-box">
+                <div class="current-temp">
+                    <h2>12</h2>
+                    <span>°C</span>
+                </div>
+
+                <div class="time-d-box">
+                    <div class="day">monday,</div>
+                    <div class="time">16:00</div>
+                </div>
+            </div>
+            <div class="weather-info-box">
+
+                <div class="cloud">
+                    <img src="img/cloud.png" alt="">
+                    <h3>mostly cloudy</h3>
+                </div>
+
+                <div class="rain">
+                    <img src="img/rain.png" alt="">
+                    <h3>rain - <span class="percent">30%</span></h3>
+                </div>
+
+                <div class="weather-info-img-box">
+                    <img src="img/NY.jpeg" alt="">
+
+                    <h2>New York, NY, USA</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-2">
+            <nav>
+                <ul class="nav-btn">
+                    <li id="today">today</li>
+                    <li id="week" class="active">week</li>
+                </ul>
+
+                <div class="profile-box">
+                    <div class="degree cesius">°C</div>
+                    <div class="degree fahrenheit">°F</div>
+
+                    <div class="profile-img-box">
+                        <img src="img/aboutbg.png" alt="">
+                    </div>
+                </div>
+            </nav>
+
+            <div class="weather-content">
+                <div class="today-weather">
+                    <div class="today-current-weather-bx1">
+                        <img src="img/cloudbg1.jpeg" alt="">
+                        <div class="today-weather-info1">
+                            <h1 class="day">Monday</h1>
+                            <h3 class="date">18 January 2024</h3>
+                            <div class="location">
+                                <i class='bx bx-current-location'></i>
+                                <h3 class="country">Madrid</h3>
+                            </div>
+                        </div>
+
+                        <div class="today-weather-info2">
+                            <i class='bx bx-sun'></i>
+                            <div class="temperature">
+                                <h1>12</h1>
+                                <span>°C</span>
+                            </div>
+                            <h2 class="sky">clear sky</h2>
+                        </div>
+                    </div>
+
+                    <div class="today-current-weather-bx2">
+                        <div class="humidity">
+                            <h1>humidity</h1>
+                            <h3>63%</h3>
+                        </div>
+                        <div class="wind">
+                            <h1>wind</h1>
+                            <h3>7.30km/h</h3>
+                        </div>
+                        <div class="visibility">
+                            <h1>visibility</h1>
+                            <h3>5.2km/h</h3>
+                        </div>
+                        <div class="airQ">
+                            <h1>air quality</h1>
+                            <h3>150</h3>
+                        </div>
+
+                        <div class="day-box">
+                            <div class="day sunday active">
+                                <h3>Sun</h3>
+                                <img src="img/sunny.png" alt="">
+    
+                                <div class="day-celsius">
+                                    <h3>15°</h3>
+                                    <h3>-3°</h3>
+                                </div>
+                            </div>
+                            <div class="day monday">
+                                <h3>Mon</h3>
+                                <img src="img/rainnyC.png" alt="">
+                                <div class="day-celsius">
+                                    <h3>12°</h3>
+                                    <h3>7°</h3>
+                                </div>
+                            </div>
+                            <div class="day tuesday">
+                                <h3>Tue</h3>
+                                <img src="img/lightR.png" alt="">
+                                <div class="day-celsius">
+                                    <h3>9°</h3>
+                                    <h3>7°</h3>
+                                </div>
+                            </div>
+                            <div class="day wednesday">
+                                <h3>Wed</h3>
+                                <img src="img/moderateR.png" alt="">
+                                <div class="day-celsius">
+                                    <h3>8°</h3>
+                                    <h3>-1°</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-bx">
+                            <button>Switch units</button>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="week-weather active">
+                    <div class="day-box">
+                        <div class="day sunday">
+                            <h3>Sun</h3>
+                            <img src="img/sunny.png" alt="">
+
+                            <div class="day-celsius">
+                                <h3>15°</h3>
+                                <h3>-3°</h3>
+                            </div>
+                        </div>
+                        <div class="day monday">
+                            <h3>Mon</h3>
+                            <img src="img/rainnyC.png" alt="">
+                            <div class="day-celsius">
+                                <h3>12°</h3>
+                                <h3>7°</h3>
+                            </div>
+                        </div>
+                        <div class="day tuesday">
+                            <h3>Tue</h3>
+                            <img src="img/lightR.png" alt="">
+                            <div class="day-celsius">
+                                <h3>9°</h3>
+                                <h3>7°</h3>
+                            </div>
+                        </div>
+                        <div class="day wednesday">
+                            <h3>Wed</h3>
+                            <img src="img/moderateR.png" alt="">
+                            <div class="day-celsius">
+                                <h3>8°</h3>
+                                <h3>-1°</h3>
+                            </div>
+                        </div>
+                        <div class="day thursday">
+                            <h3>Thu</h3>
+                            <img src="img/wind.png" alt="">
+                            <div class="day-celsius">
+                                <h3>5°</h3>
+                                <h3>-2°</h3>
+                            </div>
+                        </div>
+                        <div class="day friday">
+                            <h3>Fri</h3>
+                            <img src="img/partlyC.png" alt="">
+                            <div class="day-celsius">
+                                <h3>4°</h3>
+                                <h3>-4°</h3>
+                            </div>
+                        </div>
+                        <div class="day saturday">
+                            <h3>Sat</h3>
+                            <img src="img/sunny.png" alt="">
+                            <div class="day-celsius">
+                                <h3>3°</h3>
+                                <h3>-3°</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlight">
+                        <h2 class="header">Today's highlights</h2>
+
+                        <div class="highlight-contents">
+                            <div class="H uv-index">
+                                <h3>uv-index</h3>
+                                <div class="gauge">
+                                    <span>6</span>
+                                    <span>9</span>
+                                    <span>12</span>
+                                </div>
+
+                                <div class="circle-outer">
+                                    <div class="circle-inner">
+                                        <h1>5</h1>
+                                    </div>
+
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                        <defs>
+                                            <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                            </linearGradient>
+                                        </defs>
+                                        <circle cx="60" cy="60" r="50" stroke-linecap="square" />
+                                    </svg>
+
+                                </div>
+
+                                <div class="cover-bx">
+                                    <div class="cover"></div>
+                                </div>
+                            </div>
+
+                            <div class="H wind-status">
+                                <h3>wind status</h3>
+                                <div class="wind">
+                                    <h1>7.70</h1>
+                                    <span class="units">km/h</span>
+                                </div>
+                                <div class="abb">
+                                    <img src="img/windG.png" alt="">
+                                    <h3 class="abb-text">WSW</h3>
+                                </div>
+                            </div>
+
+                            <div class="H sun-time">
+                                <h3>sunrise & sunset</h3>
+
+                                <div class="sunrise">
+                                    <img src="img/arrow.png" alt="">
+                                    <div class="time">
+                                        <h2 class="main-time">6:35AM</h2>
+                                        <span class="sun-time">-1m 46s</span>
+                                    </div>
+                                </div>
+                                <div class=" sunset">
+                                    <img src="img/arrow.png" alt="">
+                                    <div class="time">
+                                        <h2 class="main-time">5:42PM</h2>
+                                        <span class="sun-time">+2m 22s</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="H humidity">
+                                <h3>humidity</h3>
+
+
+                                <div class="levels">
+                                    <div class="H-level">
+                                        <h1>12</h1>
+                                        <span>%</span>
+                                    </div>
+
+                                    <div class="slider">
+                                    </div>
+                                </div>
+                                <h4>Normal 🤙</h4>
+
+                            </div>
+
+                            <div class="H visibility">
+                                <h3>Visibility</h3>
+
+                                <div class="visible">
+                                    <h1>5.2</h1>
+                                    <span>km</span>
+                                </div>
+
+                                <h4>Average 😊</h4>
+                            </div>
+
+                            <div class="H airQ">
+                                <h3>Air quantity</h3>
+
+                                <div class="airQ-info">
+                                    <h1>105</h1>
+
+                                    <div class="slider">
+                                        <div class="tracker"></div>
+                                    </div>
+
+
+                                </div>
+                                <h4>Unhealthy 👎</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="src/app.js"></script>
+</body>
+
+</html>
