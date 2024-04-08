@@ -16,19 +16,19 @@
     <section>
         <div class="container-1">
             <div class="search-box">
-                <i class='bx bx-search'></i>
+                <i class='bx bx-search' id="searchBtn"></i>
                 <input type="text" name="search" id="searchInput" placeholder="Search for places...">
 
             </div>
 
             <div class="current-weather-img-box">
-                <img src="img/weather.png" alt="current weather">
+                <img src="img/weather.png" alt="current weather" class="current-weather-img">
             </div>
 
             <div class="weather-temp-d-box">
                 <div class="current-temp">
-                    <h2>12</h2>
-                    <span>°C</span>
+                    <h2 id="current-temp">12</h2>
+                    <span id="unit">°C</span>
                 </div>
 
                 <div class="time-d-box">
@@ -40,7 +40,7 @@
 
                 <div class="cloud">
                     <img src="img/cloud.png" alt="">
-                    <h3>mostly cloudy</h3>
+                    <h3 id="weatherDes">mostly cloudy</h3>
                 </div>
 
                 <div class="rain">
@@ -49,9 +49,9 @@
                 </div>
 
                 <div class="weather-info-img-box">
-                    <img src="img/NY.jpeg" alt="">
+                    <img src="img/NY.jpeg" alt="" id="cityImg">
 
-                    <h2>New York, NY, USA</h2>
+                    <h2 id="cityName">New York, NY, USA</h2>
                 </div>
             </div>
         </div>
