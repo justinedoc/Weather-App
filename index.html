@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="time-d-box">
-                    <div class="day">monday,</div>
+                    <div class="day"></div>
                     <div class="time">16:00</div>
                 </div>
             </div>
@@ -78,8 +78,8 @@
                     <div class="today-current-weather-bx1">
                         <img src="img/cloudbg1.jpeg" alt="">
                         <div class="today-weather-info1">
-                            <h1 class="day">Monday</h1>
-                            <h3 class="date">18 January 2024</h3>
+                            <h1 class="day" id="day">Monday</h1>
+                            <h3 class="date" id="date">18 January 2024</h3>
                             <div class="location">
                                 <i class='bx bx-current-location'></i>
                                 <h3 class="country">Madrid</h3>
@@ -89,29 +89,29 @@
                         <div class="today-weather-info2">
                             <i class='bx bx-sun'></i>
                             <div class="temperature">
-                                <h1>12</h1>
+                                <h1 id="temp-day">12</h1>
                                 <span>°C</span>
                             </div>
-                            <h2 class="sky">clear sky</h2>
+                            <h2 class="sky" id="des">clear sky</h2>
                         </div>
                     </div>
 
                     <div class="today-current-weather-bx2">
                         <div class="humidity">
                             <h1>humidity</h1>
-                            <h3>63%</h3>
+                            <h3 id="1">63%</h3>
                         </div>
                         <div class="wind">
                             <h1>wind</h1>
-                            <h3>7.30km/h</h3>
+                            <h3 id="2">7.30km/h</h3>
                         </div>
                         <div class="visibility">
                             <h1>visibility</h1>
-                            <h3>5.2km/h</h3>
+                            <h3 id="3">5.2km/h</h3>
                         </div>
                         <div class="airQ">
-                            <h1>air quality</h1>
-                            <h3>150</h3>
+                            <h1>pressure</h1>
+                            <h3 id="4">150</h3>
                         </div>
 
                         <div class="day-box">
@@ -163,7 +163,7 @@
                             <img src="img/sunny.png" alt="">
 
                             <div class="day-celsius">
-                                <h3>15°</h3>
+                                <h3 class="sun-temp">15°</h3>
                                 <h3>-3°</h3>
                             </div>
                         </div>
@@ -171,7 +171,7 @@
                             <h3>Mon</h3>
                             <img src="img/rainnyC.png" alt="">
                             <div class="day-celsius">
-                                <h3>12°</h3>
+                                <h3 class="mon-temp">12°</h3>
                                 <h3>7°</h3>
                             </div>
                         </div>
@@ -179,7 +179,7 @@
                             <h3>Tue</h3>
                             <img src="img/lightR.png" alt="">
                             <div class="day-celsius">
-                                <h3>9°</h3>
+                                <h3 class="tue-temp">9°</h3>
                                 <h3>7°</h3>
                             </div>
                         </div>
@@ -187,7 +187,7 @@
                             <h3>Wed</h3>
                             <img src="img/moderateR.png" alt="">
                             <div class="day-celsius">
-                                <h3>8°</h3>
+                                <h3 class="wed-temp">8°</h3>
                                 <h3>-1°</h3>
                             </div>
                         </div>
@@ -195,7 +195,7 @@
                             <h3>Thu</h3>
                             <img src="img/wind.png" alt="">
                             <div class="day-celsius">
-                                <h3>5°</h3>
+                                <h3 class="thu-temp">5°</h3>
                                 <h3>-2°</h3>
                             </div>
                         </div>
@@ -203,7 +203,7 @@
                             <h3>Fri</h3>
                             <img src="img/partlyC.png" alt="">
                             <div class="day-celsius">
-                                <h3>4°</h3>
+                                <h3 class="fri-temp">4°</h3>
                                 <h3>-4°</h3>
                             </div>
                         </div>
@@ -211,7 +211,7 @@
                             <h3>Sat</h3>
                             <img src="img/sunny.png" alt="">
                             <div class="day-celsius">
-                                <h3>3°</h3>
+                                <h3 class="sat-temp">3°</h3>
                                 <h3>-3°</h3>
                             </div>
                         </div>
@@ -231,7 +231,7 @@
 
                                 <div class="circle-outer">
                                     <div class="circle-inner">
-                                        <h1>5</h1>
+                                        <h1 class="current-uv">5</h1>
                                     </div>
 
 
@@ -255,7 +255,7 @@
                             <div class="H wind-status">
                                 <h3>wind status</h3>
                                 <div class="wind">
-                                    <h1>7.70</h1>
+                                    <h1 class="current-wind">7.70</h1>
                                     <span class="units">km/h</span>
                                 </div>
                                 <div class="abb">
@@ -270,14 +270,14 @@
                                 <div class="sunrise">
                                     <img src="img/arrow.png" alt="">
                                     <div class="time">
-                                        <h2 class="main-time">6:35AM</h2>
+                                        <h2 class="main-time rise">6:35AM</h2>
                                         <span class="sun-time">-1m 46s</span>
                                     </div>
                                 </div>
                                 <div class=" sunset">
                                     <img src="img/arrow.png" alt="">
                                     <div class="time">
-                                        <h2 class="main-time">5:42PM</h2>
+                                        <h2 class="main-time set">5:42PM</h2>
                                         <span class="sun-time">+2m 22s</span>
                                     </div>
                                 </div>
@@ -289,7 +289,7 @@
 
                                 <div class="levels">
                                     <div class="H-level">
-                                        <h1>12</h1>
+                                        <h1 class="current-humidity">12</h1>
                                         <span>%</span>
                                     </div>
 
@@ -304,7 +304,7 @@
                                 <h3>Visibility</h3>
 
                                 <div class="visible">
-                                    <h1>5.2</h1>
+                                    <h1 class="current-visibility">5.2</h1>
                                     <span>km</span>
                                 </div>
 
@@ -312,10 +312,10 @@
                             </div>
 
                             <div class="H airQ">
-                                <h3>Air quantity</h3>
+                                <h3>Pressure</h3>
 
                                 <div class="airQ-info">
-                                    <h1>105</h1>
+                                    <h1 class="current-pressure">105</h1>
 
                                     <div class="slider">
                                         <div class="tracker"></div>
@@ -323,7 +323,7 @@
 
 
                                 </div>
-                                <h4>Unhealthy 👎</h4>
+                                <h4>Not Bad 👌</h4>
                             </div>
                         </div>
                     </div>
