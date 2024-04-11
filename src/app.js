@@ -96,6 +96,7 @@ weekSection.addEventListener("click", () => {
     todayWeather.classList.remove("active");
 });
 
+
 // search
 searchInputBox.addEventListener("keydown", (keystroke) => {
     if (keystroke.key === "Enter") {
